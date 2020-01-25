@@ -1,3 +1,157 @@
+/* BRANDING COLOR MAIN: #2D2869 (2748 - color books, color bridge coated) GET CODE FOR GREEN */
+/* COLOR CODES: #559CAD (light, muted blue) / #D4DADD (light gray) / #423E37 (dark gray/black - type) / #EAC56D (light muted yellow) */
+
 body {
-    background-color: darkgreen;
+    background-color: #D4DADD;
+    color: #423E37;
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /* Choose another typeface? */
+    text-align: center;
+    clear: both;
+    width: 100%;
+}
+
+/* NAVBAR STYLING*/
+.navbar {
+    display: flex;
+    background-color: #2D2869;
+    color: #D4DADD;
+}
+
+.navbar h2 {
+    line-height: 1.5em;
+    padding: 0 2em;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    margin: 1em 0;
+    display: block;
+    color: #D4DADD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nav-item a:hover {
+    color: white;
+    background-color: #423E37;
+}
+
+/* FULLPAGE STYLING */
+.fullPage {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullPage h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.fullPage p, .fullPage ul {
+    width: 70em;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+
+.fullPage p {
+    text-align: left;
+}
+
+
+.fullPage ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+/* PROJECTS PAGE / PROJECT CARDS STYLING*/
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.projectCard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    width: 30%;
+    margin: 1em;
+    text-align: center;
+}
+
+.projectCard header {
+    width: 100%;
+    padding: .5em;
+    background-color: #EAC56D;
+    color: #423E37;
+}
+
+.projectCard p {
+    text-align: center;
+    width: 100%;
+    margin: .5em;
+}
+
+.projectCard img {
+    width: 50%;
+    margin: 1em;
+}
+
+.projectCard footer {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #559CAD;
+    width: 100%;
+}
+
+.projectCard footer a {
+    color: #423E37;
+    width: 100%;
+    margin: 0;
+    padding: .5em;
+}
+
+/* PAGE FOOTER */
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #EAC56D;
+    color: #423E37;
+    height: 25%;
+}
+
+footer h4 {
+    width: 100%;
+    line-height: 1em;
+    margin: 0 0 10px 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 1em;
+}
+
+footer a {
+    color: #423E37;
+    padding: 1em;
 }
