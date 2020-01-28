@@ -1,9 +1,26 @@
-/* BRANDING COLOR MAIN: #2D2869 (2748 - color books, color bridge coated) GET CODE FOR GREEN */
-/* COLOR CODES: #559CAD (light, muted blue) / #D4DADD (light gray) / #423E37 (dark gray/black - type) / #EAC56D (light muted yellow) */
+/* BRANDING COLORS
+(color bridge coated for all Pantone colors)
+MAIN NAVY BLUE - PANTONE 2748
+        CODE: #2D2869
+
+DARK TEXT / BCKGRND - PANTONE 419
+        CODE: #292F2D
+
+LIGHT TEXT / BCKGRND - PANTONE 656
+        CODE: #DFE6EF
+
+SECONDARY YELLOW - PANTONE 141
+        CODE: #EFC462
+
+SECONDARY LIGHT BLUE - PANTONE 7459
+        CODE: #5C9DAE
+
+TERTIARY GRAY FOR BCKGRND CONTRST - #D4DADD - NOT A PANTONE / BRAND COLOR - FOR USE ON WEBSITE ONLY
+*/
 
 body {
-    background-color: #D4DADD;
-    color: #423E37;
+    background-color: #DFE6EF;
+    color: #292F2D;
     margin: 0;
     padding: 0;
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /* Choose another typeface? */
@@ -16,7 +33,7 @@ body {
 .navbar {
     display: flex;
     background-color: #2D2869;
-    color: #D4DADD;
+    color: #DFE6EF;
 }
 
 .navbar h2 {
@@ -34,7 +51,7 @@ body {
 .nav-item a {
     margin: 1em 0;
     display: block;
-    color: #D4DADD;
+    color: #DFE6EF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -42,8 +59,8 @@ body {
 }
 
 .nav-item a:hover {
-    color: white;
-    background-color: #423E37;
+    color: #DFE6EF;
+    background-color: #292F2D;
 }
 
 /* FULLPAGE STYLING */
@@ -58,17 +75,22 @@ body {
 .fullPage h2 {
     width: 100%;
     text-align: center;
+    font-size: 2em;
+    color: #2D2869;
+    text-transform: uppercase;
 }
 
 .fullPage p, .fullPage ul {
     width: 70em;
     margin: 0 auto;
     line-height: 1.5em;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .fullPage p {
     text-align: left;
+    padding: 1em;
+    width: 50%;
 }
 
 
@@ -77,6 +99,13 @@ body {
     text-align: center;
     padding: 0;
 }
+
+#technologiesPage {
+    padding: 2em;
+    padding-left: 0;
+    background-color: #D4DADD;
+}
+
 
 /* PROJECTS PAGE / PROJECT CARDS STYLING*/
 .projects {
@@ -91,39 +120,41 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    border: 1px solid black;
+    border: 1px solid #292F2D;
     width: 30%;
     margin: 1em;
     text-align: center;
+    background-color: #D4DADD;
 }
 
 .projectCard header {
     width: 100%;
     padding: .5em;
-    background-color: #EAC56D;
-    color: #423E37;
+    background-color: #5C9DAE;
+    color: #292F2D;
 }
 
 .projectCard p {
     text-align: center;
     width: 100%;
     margin: .5em;
+    padding: 0;
 }
 
 .projectCard img {
-    width: 50%;
+    width: 95%;
     margin: 1em;
 }
 
 .projectCard footer {
     display: flex;
     flex-flow: row wrap;
-    background-color: #559CAD;
+    background-color: #5C9DAE;
     width: 100%;
 }
 
 .projectCard footer a {
-    color: #423E37;
+    color: #292F2D;
     width: 100%;
     margin: 0;
     padding: .5em;
@@ -135,8 +166,8 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: #EAC56D;
-    color: #423E37;
+    background-color: #EFC462;
+    color: #292F2D;
     height: 25%;
 }
 
@@ -152,6 +183,6 @@ footer p {
 }
 
 footer a {
-    color: #423E37;
+    color: #292F2D;
     padding: 1em;
 }
