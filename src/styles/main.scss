@@ -1,22 +1,5 @@
-/* BRANDING COLORS
-(color bridge coated for all Pantone colors)
-MAIN NAVY BLUE - PANTONE 2748
-        CODE: #2D2869
-
-DARK TEXT / BCKGRND - PANTONE 419
-        CODE: #292F2D
-
-LIGHT TEXT / BCKGRND - PANTONE 656
-        CODE: #DFE6EF
-
-SECONDARY YELLOW - PANTONE 141
-        CODE: #EFC462
-
-SECONDARY LIGHT BLUE - PANTONE 7459
-        CODE: #5C9DAE
-
-TERTIARY GRAY FOR BCKGRND CONTRST - #D4DADD - NOT A PANTONE / BRAND COLOR - FOR USE ON WEBSITE ONLY
-*/
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
     background-color: #DFE6EF;
