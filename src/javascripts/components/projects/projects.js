@@ -13,8 +13,8 @@ const createProjectCards = () => {
     <p>${project.description}</p>
     <p>${project.technologiesUsed}</p>
     <footer class="project-links">
-    <a href="${projects.url}">Link to Live Website</a>
-    <a href="${projects.githubUrl}">Link to Github Repository</a>
+    <a href="${project.url}">Link to Live Website</a>
+    <a href="${project.githubUrl}">Link to Github Repository</a>
     </footer>
     </div>'`;
   });
