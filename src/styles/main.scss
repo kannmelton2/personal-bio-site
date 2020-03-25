@@ -1,9 +1,10 @@
+@import "./colors";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-    background-color: #DFE6EF;
-    color: #292F2D;
+    background-color: $lighttext;
+    color: $darktext;
     margin: 0;
     padding: 0;
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /* Choose another typeface? */
@@ -15,8 +16,8 @@ body {
 /* NAVBAR STYLING*/
 .navbar {
     display: flex;
-    background-color: #2D2869;
-    color: #DFE6EF;
+    background-color: $primary;
+    color: $lighttext;
 }
 
 .navbar h2 {
@@ -34,7 +35,7 @@ body {
 .nav-item a {
     margin: 1em 0;
     display: block;
-    color: #DFE6EF;
+    color: $lighttext;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -42,8 +43,8 @@ body {
 }
 
 .nav-item a:hover {
-    color: #DFE6EF;
-    background-color: #292F2D;
+    color: $lighttext;
+    background-color: $secondary-blue;
 }
 
 /* FULLPAGE STYLING */
@@ -59,7 +60,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 2em;
-    color: #2D2869;
+    color: $primary;
     text-transform: uppercase;
 }
 
@@ -86,7 +87,7 @@ body {
 #technologiesPage {
     padding: 2em;
     padding-left: 0;
-    background-color: #D4DADD;
+    background-color: $tertiary-gray;
 }
 
 
@@ -103,18 +104,18 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    border: 1px solid #292F2D;
+    border: 1px solid $darktext;
     width: 30%;
     margin: 1em;
     text-align: center;
-    background-color: #D4DADD;
+    background-color: $tertiary-gray;
 }
 
 .projectCard header {
     width: 100%;
     padding: .5em;
-    background-color: #5C9DAE;
-    color: #292F2D;
+    background-color: $secondary-blue;
+    color: $darktext;
 }
 
 .projectCard p {
@@ -132,12 +133,12 @@ body {
 .projectCard footer {
     display: flex;
     flex-flow: row wrap;
-    background-color: #5C9DAE;
+    background-color: $secondary-blue;
     width: 100%;
 }
 
 .projectCard footer a {
-    color: #292F2D;
+    color: $darktext;
     width: 100%;
     margin: 0;
     padding: .5em;
@@ -149,8 +150,8 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: #EFC462;
-    color: #292F2D;
+    background-color: $secondary-yellow;
+    color: $darktext;
     height: 25%;
 }
 
@@ -166,6 +167,6 @@ footer p {
 }
 
 footer a {
-    color: #292F2D;
+    color: $darktext;
     padding: 1em;
 }
