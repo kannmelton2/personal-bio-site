@@ -1,0 +1,47 @@
+{
+  "project1": {
+    "title": "Chatty Waterwheels",
+    "screenshot": "https://i.imgur.com/ekvXFUD.jpg",
+    "description": "A group project working to explore javascript modules, jquery, and webpack. The creation of a basic messaging application.",
+    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github, Jquery",
+    "available": true,
+    "url": "https://chatty-waterwheels.firebaseapp.com/",
+    "githubUrl": "https://github.com/kannmelton2/chatty-waterwheels"
+  },
+  "project2": {
+    "title": "Bear Watcher",
+    "screenshot": "https://i.imgur.com/ESx2ZVY.jpg",
+    "description": "An introductory exploration of javascript as modules, also an introduction to using jquery.",
+    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available": true,
+    "url": "https://bear-watcher-4e671.firebaseapp.com/",
+    "githubUrl": "https://github.com/kannmelton2/bear-watcher"
+  },
+  "project3": {
+    "title": "Pinterest",
+    "screenshot": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
+    "description": "A project to explore the use of a database, its limitations and uses.",
+    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github, Jquery",
+    "available": true,
+    "url": "https://pinterest-948da.firebaseapp.com/",
+    "githubUrl": "https://github.com/kannmelton2/pinterest"
+  },
+  "project4": {
+    "title": "Cool Project",
+    "screenshot": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
+    "description": "This is the best project",
+    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available": true,
+    "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
+    "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+  },
+  "project5": {
+    "title": "Cool Project",
+    "screenshot": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
+    "description": "This is the best project",
+    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available": true,
+    "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
+    "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+  }
+}
