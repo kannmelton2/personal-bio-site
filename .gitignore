@@ -3,6 +3,9 @@
 package-lock.json
 build/
 .firebase/
+src/javascripts/helpers/apiKeys.json
+.firebaserc
+firebase.json
 
 # Logs
 logs
