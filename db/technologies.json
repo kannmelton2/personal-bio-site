@@ -1,0 +1,66 @@
+{
+  "tech1": {
+    "altText": "HTML5",
+    "icon": ""
+  },
+  "tech2": {
+    "altText": "CSS3",
+    "icon": ""
+  },
+  "tech3": {
+    "altText": "SCSS",
+    "icon": ""
+  },
+  "tech4": {
+    "altText": "JavaScript (ES6)",
+    "icon": ""
+  },
+  "tech5": {
+    "altText": "Firebase",
+    "icon": ""
+  },
+  "tech6": {
+    "altText": "git",
+    "icon": ""
+  },
+  "tech7": {
+    "altText": "Github",
+    "icon": ""
+  },
+  "tech8": {
+    "altText": "JQuery",
+    "icon": ""
+  },
+  "tech9": {
+    "altText": "React",
+    "icon": ""
+  },
+  "tech10": {
+    "altText": "Slack",
+    "icon": ""
+  },
+  "tech11": {
+    "altText": "Wordpress",
+    "icon": ""
+  },
+  "tech12": {
+    "altText": "VS Code",
+    "icon": ""
+  },
+  "tech13": {
+    "altText": "Adobe Illustrator",
+    "icon": ""
+  },
+  "tech14": {
+    "altText": "Adobe InDesign",
+    "icon": ""
+  },
+  "tech15": {
+    "altText": "Adobe Photoshop",
+    "icon": ""
+  },
+  "tech16": {
+    "altText": "Bootstrap",
+    "icon": ""
+  }
+}
