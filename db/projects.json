@@ -21,16 +21,16 @@
     "title": "Pinterest",
     "screenshot": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
     "description": "A project to explore the use of a database, its limitations and uses.",
-    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github, Jquery",
+    "technologiesUsed": "HTML, SCSS, Vanilla JavaScript, Firebase, Version Control with Github, Jquery",
     "available": true,
     "url": "https://pinterest-948da.firebaseapp.com/",
     "githubUrl": "https://github.com/kannmelton2/pinterest"
   },
   "project4": {
-    "title": "Cool Project",
-    "screenshot": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-    "description": "This is the best project",
-    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "title": "King Author's Fine Rennaissance Faires",
+    "screenshot": "https://i.imgur.com/J1bMvAC.jpg",
+    "description": "A dashboard for a user to view all of their Rennaissance Faires, their food, shows, staff, and souvenirs.",
+    "technologiesUsed": "HTML, SCSS, Vanilla JavaScript, Firebase, Version Control with Github, Jquery",
     "available": true,
     "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
     "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
