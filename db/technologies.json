@@ -1,66 +1,66 @@
 {
   "tech1": {
     "altText": "HTML5",
-    "icon": ""
+    "icon": "https://i.imgur.com/XxNQqVgs.png"
   },
   "tech2": {
     "altText": "CSS3",
-    "icon": ""
+    "icon": "https://i.imgur.com/pz2c7zE.png"
   },
   "tech3": {
     "altText": "SCSS",
-    "icon": ""
+    "icon": "https://i.imgur.com/KMNNzuB.png"
   },
   "tech4": {
     "altText": "JavaScript (ES6)",
-    "icon": ""
+    "icon": "https://i.imgur.com/Z6GUAq7.png"
   },
   "tech5": {
     "altText": "Firebase",
-    "icon": ""
+    "icon": "https://i.imgur.com/FZRAvtV.png"
   },
   "tech6": {
     "altText": "git",
-    "icon": ""
+    "icon": "https://i.imgur.com/AWn5k9E.png"
   },
   "tech7": {
     "altText": "Github",
-    "icon": ""
+    "icon": "https://i.imgur.com/5CgOeQT.png"
   },
   "tech8": {
     "altText": "JQuery",
-    "icon": ""
+    "icon": "https://i.imgur.com/cBqXIFu.png"
   },
   "tech9": {
     "altText": "React",
-    "icon": ""
+    "icon": "https://i.imgur.com/288kIFH.png"
   },
   "tech10": {
     "altText": "Slack",
-    "icon": ""
+    "icon": "https://i.imgur.com/gdAQPOZ.png"
   },
   "tech11": {
     "altText": "Wordpress",
-    "icon": ""
+    "icon": "https://i.imgur.com/VE1UUAb.png"
   },
   "tech12": {
     "altText": "VS Code",
-    "icon": ""
+    "icon": "https://i.imgur.com/FvgZvaG.png"
   },
   "tech13": {
     "altText": "Adobe Illustrator",
-    "icon": ""
+    "icon": "https://i.imgur.com/OLC9vdX.png"
   },
   "tech14": {
     "altText": "Adobe InDesign",
-    "icon": ""
+    "icon": "https://i.imgur.com/gOofwh5.png"
   },
   "tech15": {
     "altText": "Adobe Photoshop",
-    "icon": ""
+    "icon": "https://i.imgur.com/kDaM3ka.png"
   },
   "tech16": {
     "altText": "Bootstrap",
-    "icon": ""
+    "icon": "https://i.imgur.com/aytWaTt.png"
   }
 }

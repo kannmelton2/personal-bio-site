@@ -6,7 +6,7 @@ import utils from '../../helpers/utils';
 const createProjectCards = () => {
   projectData.getProjects()
     .then((projects) => {
-      let domStr = '';
+      let domStr = '<h2>Projects</h2>';
       projects.forEach((project) => {
         domStr += `
         <div class="projectCard">
@@ -18,7 +18,7 @@ const createProjectCards = () => {
         <a href="${project.url}">Link to Live Website</a>
         <a href="${project.githubUrl}">Link to Github Repository</a>
         </footer>
-        </div>'`;
+        </div>`;
       });
       utils.printToDom('projectsPage', domStr);
     })

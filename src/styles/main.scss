@@ -3,8 +3,8 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-    background-color: $lighttext;
-    color: $darktext;
+    background-color: $primary;
+    color: $lighttext;
     margin: 0;
     padding: 0;
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /* Choose another typeface? */
@@ -43,38 +43,38 @@ body {
 }
 
 .nav-item a:hover {
-    color: $lighttext;
-    background-color: $secondary-blue;
+    color: $secondary-yellow;
 }
 
 /* FULLPAGE STYLING */
 .fullPage {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .fullPage h2 {
     width: 100%;
     text-align: center;
     font-size: 2em;
-    color: $primary;
+    color: $lighttext;
     text-transform: uppercase;
 }
 
-.fullPage p, .fullPage ul {
+.fullPage p {
     width: 70em;
     margin: 0 auto;
     line-height: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .fullPage p {
     text-align: left;
     padding: 1em;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -82,12 +82,6 @@ body {
     list-style: none;
     text-align: center;
     padding: 0;
-}
-
-#technologiesPage {
-    padding: 2em;
-    padding-left: 0;
-    background-color: $tertiary-gray;
 }
 
 
@@ -105,11 +99,12 @@ body {
     justify-content: center;
     align-content: center;
     border: 1px solid $darktext;
-    width: 30%;
     margin: 1em;
     text-align: center;
     background-color: $tertiary-gray;
 }
+
+/* media query goes here */
 
 .projectCard header {
     width: 100%;
@@ -123,6 +118,7 @@ body {
     width: 100%;
     margin: .5em;
     padding: 0;
+    color: $darktext;
 }
 
 .projectCard img {
