@@ -135,7 +135,6 @@ body {
 
 .projectCard footer a {
     color: $darktext;
-    width: 100%;
     margin: 0;
     padding: .5em;
 }
@@ -146,8 +145,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: $secondary-yellow;
-    color: $darktext;
+    color: $secondary-yellow;
     height: 25%;
 }
 
@@ -158,11 +156,16 @@ footer h4 {
 }
 
 footer p {
-    margin: 0;
+    margin: 0 auto;
     padding: 1em;
+    text-align: center;
+    width: 100%;
 }
 
+
 footer a {
-    color: $darktext;
-    padding: 1em;
+    font-size: 2em;
+    color: $secondary-yellow;
+    padding: .5em;
+    padding-top: 0;
 }

@@ -15,8 +15,8 @@ const createProjectCards = () => {
         <p>${project.description}</p>
         <p>${project.technologiesUsed}</p>
         <footer class="project-links">
-        <a href="${project.url}">Link to Live Website</a>
-        <a href="${project.githubUrl}">Link to Github Repository</a>
+        <a href="${project.url}"><i class="fas fa-link"></i></a>
+        <a href="${project.githubUrl}"><i class="fab fa-github"></i></a>
         </footer>
         </div>`;
       });
