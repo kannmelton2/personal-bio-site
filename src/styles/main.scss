@@ -3,9 +3,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-    /* background-color: $primary; */
     color: $darktext;
-    /* background-image: url(https://images.unsplash.com/photo-1575490937262-344efe96d264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=2100&q=80); */
     margin: 0;
     padding: 0;
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /* Choose another typeface? */
@@ -19,10 +17,9 @@ body {
     display: flex;
     background-color: $white;
     color: $primary;
-    margin-left: 5em;
-    margin-right: 8em;
+    margin-left: 3em;
+    margin-right: 3em;
     button {
-        display: inline-block;
         border: none;
         border-radius: 1em;
         padding: .75rem 1.5rem;
@@ -40,6 +37,11 @@ body {
     }
     button:hover {
         border: .0625em $lighttext solid;
+    }
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 1.5em;
     }
 }
 
@@ -79,9 +81,14 @@ body {
     background-position: center;
     color: $primary;
     height: 40em;
-        .jumbotron-btn {
+        .projects-page-btn {
             background-color: $secondary-blue;
             color: $darktext;
+            margin-top: 15rem;
+        }
+        .bio-page-btn {
+            background-color: $darktext;
+            color: $lighttext;
             margin-top: 15rem;
         }
 }
@@ -94,28 +101,15 @@ body {
 
 /* FULLPAGE STYLING */
 .fullPage {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
+    display: grid;
         h2 {
-            width: 100%;
-            text-align: center;
-            font-size: 2em;
+            font-size: 5em;
             font-weight: 700;
             color: $primary;
             text-transform: uppercase;
             margin-top: 2em;
-        }
-        p {
-            width: 70em;
-            margin: 0 auto;
-            line-height: 1.5em;
-            font-size: 1.5em;
-            text-align: left;
-            padding: 1em;
         }
         ul {
             list-style: none;
@@ -124,74 +118,35 @@ body {
         }
 }
 
+/* ABOUT / BIO */
+.biography {
+    p {
+        justify-self: center;
+        line-height: 1.5em;
+        font-size: 1.5em;
+        text-align: left;
+        padding: 1em;
+    }
+}
+
 /* ABOUT / BIO LINKS */
-.bio-links {
-    color: $darktext;
-    font-size: 2.5em;
+.bio-links a {
+    color: $secondary-blue;
+    font-size: 3em;
 }
 
-/* PROJECTS PAGE / PROJECT CARDS STYLING*/
-.projects {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
 
-.projectCard {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    border: 1px solid $darktext;
-    margin: 1em;
-    text-align: center;
-    background-color: $tertiary-gray;
-}
-
-/* media query goes here */
-
-.projectCard header {
-    width: 100%;
-    padding: .5em;
-    background-color: $secondary-blue;
-    color: $darktext;
-}
-
-.projectCard p {
-    text-align: center;
-    width: 100%;
-    margin: .5em;
-    padding: 0;
-    color: $darktext;
-}
-
-.projectCard img {
-    width: 95%;
-    margin: 1em;
-}
-
-.projectCard footer {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: $secondary-blue;
-    width: 100%;
-}
-
-.projectCard footer a {
-    color: $darktext;
-    margin: 0;
-    padding: .5em;
-}
 
 /* PAGE FOOTER */
 
-footer {
+.page-footer {
     display: flex;
     flex-flow: row wrap;
+    background-color: $tertiary-gray;
     justify-content: center;
     color: $darktext;
     height: 25%;
+    margin-top: .5em;
         h4 {
             width: 100%;
             line-height: 1em;

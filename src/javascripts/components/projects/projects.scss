@@ -1,7 +1,49 @@
 @import '../../../styles/colors';
 
+/* PROJECTS PAGE / PROJECT CARDS STYLING*/
+/* parent grid container, use grid-template properties here */
 .projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5em;
+  justify-items: center;
   h2 {
-    padding: 1em;
+      grid-column: 1 / 3;
+      justify-self: center;
+  }
 }
+
+/* grid items, use other properties here */
+.projectCard {
+  border: .0625em solid $darktext;
+  justify-self: center;
+    img {
+      width: 100%;
+    }
 }
+
+/* media query goes here */
+
+.projectCard header {
+  padding: .5em;
+  background-color: $secondary-blue;
+  color: $darktext;
+}
+
+// .projectCard p {
+//   text-align: center;
+//   margin: .5em;
+//   padding: 0;
+//   color: $darktext;
+// }
+
+// .projectCard footer {
+//   background-color: $secondary-blue;
+//   width: 100%;
+// }
+
+// .projectCard footer a {
+//   color: $darktext;
+//   margin: 0;
+//   padding: .5em;
+// }
