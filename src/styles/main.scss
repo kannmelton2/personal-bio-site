@@ -19,8 +19,28 @@ body {
     display: flex;
     background-color: $white;
     color: $primary;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5em;
+    margin-right: 8em;
+    button {
+        display: inline-block;
+        border: none;
+        border-radius: 1em;
+        padding: .75rem 1.5rem;
+        margin: 0;
+        text-decoration: none;
+        background: white;
+        color: $primary;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    button:hover {
+        border: .0625em $lighttext solid;
+    }
 }
 
 .navbar h2 {
@@ -58,13 +78,19 @@ body {
     background-position-x: center;
     background-position: center;
     color: $primary;
-    height: 35em;
+    height: 40em;
         .jumbotron-btn {
             background-color: $secondary-blue;
             color: $darktext;
             margin-top: 15rem;
         }
 }
+
+@media only screen and (max-width: 600px) {
+    .custom-jumbotron {
+        background-size: 100%;
+    }
+  }
 
 /* FULLPAGE STYLING */
 .fullPage {
