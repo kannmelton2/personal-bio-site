@@ -8,26 +8,54 @@
 </head>
 <body>
      <!-- Navigation -->
-  <nav class="navbar">
-    <h2>Kayla Melton</h2>
-    <ul id="navLinks">
-      <li class="nav-item">
-          <a href="#bioPage" id="navToBio">Bio</a>
-        </li class="nav-item">
-      <li class="nav-item">
-          <a href="#technologiesPage" id="navToTechnologies">Technologies</a>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><h2>Kayla Melton</h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-ellipsis-h"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#bioPage" id="navToBio">Bio</a>
         </li>
-      <li class="nav-item">
-          <a href="#projectsPage" id="navToProjects">Projects</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#technologiesPage">Technologies</a>
         </li>
-    </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="projectsPage">Projects</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <!-- End Navigation -->
 
+  <!-- Jumbotron -->
+  <div class="fullPage card card-image custom-jumbotron">
+    <div class="text-center py-5 px-4">
+      <div class="py-5">
+
+        <!-- Content -->
+          <h3 class="pb-2 mb-2 px-md-5 mx-md-5">Hi there! I'm Kayla, a software developer and graphic designer based in Nashville, Tennesse. Let's create something together.</h3>
+          <a class="btn jumbotron-btn"><i class="fa fa-clone left"></i> View projects</a>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- End Jumbotron -->
+  
   <!-- Primary View -->
   <div class="fullPage" id="bioPage">
     <h2>About / Bio</h2>
-        <p>Hello there, I’m Kayla! I’m a Graphic Designer and Software Developer; I currently work as a Graphic Designer and Prepress Technician for a locally owned print shop in Springfield, Tennessee.</p>
+        <!-- Links -->
+        <div class="bio-links">
+          <a href="https://www.linkedin.com/in/kannmelton2/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/kannmelton2"><i class="fab fa-github-square"></i></a>
+          <a href="https://twitter.com/kannmelton2"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <!--Links-->
+
+        <p>Hello there, I’m Kayla! I’m a Software Developer and Graphic Designer; I currently work as a Graphic Designer and Prepress Technician for a locally owned print shop in Springfield, Tennessee.</p>
         <p>I was first introduced to software development in a web design course while attending Austin Peay State University (APSU). I thoroughly enjoyed learning the basics of coding because I was able to create things and manipulate a web page with a few simple lines of code. The process of building, or creating something has always been something I craved. By learning development, I can create, build, break, and build again with infinite possibilities.</p>
         <p>I pursued an internship in web design and development with Thrive Creative Group in Clarksville, Tennessee during the summer of 2016. I earned my Bachelor of Fine Art in Graphic Design a year later. I have been finding joy in designing for print with my current position while continuing to learn code. A good friend of mine introduced me to the Nashville Software School (NSS) in 2019 when he found I was interested in a career of design and development, and I put in an application immediately. I began attending NSS in January of 2020.</p>
   </div>
@@ -39,9 +67,9 @@
   <footer class="page-footer">
     <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
     <p>kannmelton2@gmail.com</p>
-    <a href="#">LinkedIn</a>
-    <a href="#">Github</a>
-    <a href="#">Twitter</a>
+    <a href="https://www.linkedin.com/in/kannmelton2/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/kannmelton2"><i class="fab fa-github-square"></i></a>
+    <a href="https://twitter.com/kannmelton2"><i class="fab fa-twitter-square"></i></a>
     <h4>Kayla Melton © 2020</h4>
   </footer>
   <!-- End Footer -->

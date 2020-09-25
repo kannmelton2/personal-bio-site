@@ -32,16 +32,7 @@
     "description": "A dashboard for a user to view all of their Rennaissance Faires, their food, shows, staff, and souvenirs.",
     "technologiesUsed": "HTML, SCSS, Vanilla JavaScript, Firebase, Version Control with Github, Jquery",
     "available": true,
-    "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
-    "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
-  },
-  "project5": {
-    "title": "Cool Project",
-    "screenshot": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-    "description": "This is the best project",
-    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-    "available": true,
-    "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
-    "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    "url": "https://nutshell-sithlords.firebaseapp.com/",
+    "githubUrl": "https://github.com/kannmelton2/nutshell-sithlords"
   }
 }
