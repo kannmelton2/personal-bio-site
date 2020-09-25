@@ -1,10 +1,12 @@
 @import '../../../styles/colors';
 
 .technologies {
+  width: 80%;
   h2 {
     padding: 1em;
   }
   .tech-icons {
-    padding: 1.5em;
+    padding: 3em;
+    width: 16.6%;
   }
 }

@@ -3,8 +3,9 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-    background-color: $primary;
-    color: $lighttext;
+    /* background-color: $primary; */
+    color: $darktext;
+    /* background-image: url(https://images.unsplash.com/photo-1575490937262-344efe96d264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=2100&q=80); */
     margin: 0;
     padding: 0;
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif; /* Choose another typeface? */
@@ -16,8 +17,10 @@ body {
 /* NAVBAR STYLING*/
 .navbar {
     display: flex;
-    background-color: $primary;
-    color: $lighttext;
+    background-color: $white;
+    color: $primary;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbar h2 {
@@ -35,15 +38,32 @@ body {
 .nav-item a {
     margin: 1em 0;
     display: block;
-    color: $lighttext;
+    color: $primary;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     width: 100%;
+    font-size: 1.25em;
 }
 
 .nav-item a:hover {
     color: $secondary-yellow;
+}
+
+/* JUMBOTRON */
+.custom-jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1575490937262-344efe96d264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=2100&q=80");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position: center;
+    color: $primary;
+    height: 35em;
+        .jumbotron-btn {
+            background-color: $secondary-blue;
+            color: $darktext;
+            margin-top: 15rem;
+        }
 }
 
 /* FULLPAGE STYLING */
@@ -54,36 +74,35 @@ body {
     align-items: center;
     margin: 0 auto;
     width: 80%;
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+            color: $primary;
+            text-transform: uppercase;
+            margin-top: 2em;
+        }
+        p {
+            width: 70em;
+            margin: 0 auto;
+            line-height: 1.5em;
+            font-size: 1.5em;
+            text-align: left;
+            padding: 1em;
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
 }
 
-.fullPage h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
-    color: $lighttext;
-    text-transform: uppercase;
+/* ABOUT / BIO LINKS */
+.bio-links {
+    color: $darktext;
+    font-size: 2.5em;
 }
-
-.fullPage p {
-    width: 70em;
-    margin: 0 auto;
-    line-height: 1.5em;
-    font-size: 1.2em;
-}
-
-.fullPage p {
-    text-align: left;
-    padding: 1em;
-    width: 100%;
-}
-
-
-.fullPage ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
 
 /* PROJECTS PAGE / PROJECT CARDS STYLING*/
 .projects {
@@ -145,27 +164,23 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    color: $secondary-yellow;
+    color: $darktext;
     height: 25%;
-}
-
-footer h4 {
-    width: 100%;
-    line-height: 1em;
-    margin: 0 0 10px 0;
-}
-
-footer p {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: center;
-    width: 100%;
-}
-
-
-footer a {
-    font-size: 2em;
-    color: $secondary-yellow;
-    padding: .5em;
-    padding-top: 0;
+        h4 {
+            width: 100%;
+            line-height: 1em;
+            margin: 0 0 10px 0; 
+        }
+        p {
+            margin: 0 auto;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+        a {
+            font-size: 2em;
+            color: $darktext;
+            padding: .5em;
+            padding-top: 0;
+        }
 }
