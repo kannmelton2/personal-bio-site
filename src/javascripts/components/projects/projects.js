@@ -2,11 +2,13 @@ import projectData from '../../helpers/data/projectData';
 
 import utils from '../../helpers/utils';
 
+import './projects.scss';
+
 
 const createProjectCards = () => {
   projectData.getProjects()
     .then((projects) => {
-      let domStr = '<h2>Projects</h2>';
+      let domStr = '<h2 class="header">Projects</h2>';
       projects.forEach((project) => {
         domStr += `
         <div class="projectCard">
