@@ -72,32 +72,33 @@ body {
     color: $secondary-yellow;
 }
 
-/* JUMBOTRON */
-.custom-jumbotron {
-    background-image: url("https://images.unsplash.com/photo-1575490937262-344efe96d264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=2100&q=80");
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position-x: center;
-    background-position: center;
+/* INTRO */
+.intro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
     color: $primary;
-    height: 40em;
-        .projects-page-btn {
-            background-color: $secondary-blue;
-            color: $darktext;
-            margin-top: 15rem;
-        }
-        .bio-page-btn {
-            background-color: $darktext;
-            color: $lighttext;
-            margin-top: 15rem;
-        }
-}
-
-@media only screen and (max-width: 600px) {
-    .custom-jumbotron {
-        background-size: 100%;
+    h3 {
+        width: 75%;
     }
-  }
+    img {
+        align-self: center;
+        height: 40em;
+        // object-fit: contain;
+        // object-position: 0 -10em;
+    }
+    .projects-page-btn {
+        background-color: $secondary-blue;
+        color: $darktext;
+        margin-top: 1em;
+    }
+    .bio-page-btn {
+        background-color: $darktext;
+        color: $lighttext;
+        margin-top: 1em;
+    }
+}
 
 /* FULLPAGE STYLING */
 .fullPage {
@@ -165,3 +166,25 @@ body {
             padding-top: 0;
         }
 }
+
+@media only screen and (max-width: 600px) {
+    .fullPage {
+        width: 90%;
+        h2 {
+            font-size: 4em;
+        }
+    }
+    .biography {
+        p {
+            justify-self: center;
+            line-height: 1.5em;
+            font-size: 1.3em;
+            text-align: left;
+            padding: 1em;
+        }
+        .bio-links a {
+            color: $secondary-blue;
+            font-size: 4em;
+        }
+    }
+  }
