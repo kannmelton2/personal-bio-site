@@ -9,6 +9,7 @@ const createProjectCards = () => {
   projectData.getProjects()
     .then((projects) => {
       let domStr = '<h2 class="header">Projects</h2>';
+      domStr += '<aside class="quote"><blockquote><p class="quote-text">"A problem well-put is half solved."</p><p class="quote-author">- John Dewey</p></blockquote></aside>';
       projects.forEach((project) => {
         domStr += `
         <div class="projectCard">
