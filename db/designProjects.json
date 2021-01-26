@@ -1,0 +1,42 @@
+{
+  "designProject1": {
+    "title": "Smith Aerial Photography",
+    "mainImage": "",
+    "mainImageAltText": "",
+    "secondaryImage": "",
+    "secondaryImageAltText": "",
+    "description": "",
+    "projectType": "Logo Design",
+    "client": "Parker Smith"
+  },
+  "designProject2": {
+    "title": "",
+    "mainImage": "",
+    "mainImageAltText": "",
+    "secondaryImage": "",
+    "secondaryImageAltText": "",
+    "description": "",
+    "projectType": "",
+    "client": ""
+  },
+  "designProject3": {
+    "title": "",
+    "mainImage": "",
+    "mainImageAltText": "",
+    "secondaryImage": "",
+    "secondaryImageAltText": "",
+    "description": "",
+    "projectType": "",
+    "client": ""
+  },
+  "designProject4": {
+    "title": "",
+    "mainImage": "",
+    "mainImageAltText": "",
+    "secondaryImage": "",
+    "secondaryImageAltText": "",
+    "description": "",
+    "projectType": "",
+    "client": ""
+  }
+}

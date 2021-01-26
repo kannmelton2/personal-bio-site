@@ -1,0 +1,24 @@
+{
+  "project1": {
+    "title": "Butterfly Codex",
+    "mainImage": "NEED IMAGE!!",
+    "secondaryImage": "",
+    "demoVideo": "",
+    "description": "An application built for butterfly watchers to learn about and log sightings of butterflies from all over the United States. Butterfly Codex was inspired by a lack of accessible resources I found while researching butterflies for another project.",
+    "technologiesUsed": "HTML, CSS, React.js, Version Control with Github",
+    "available": true,
+    "liveSiteUrl": "https://butterfly-codex.firebaseapp.com/",
+    "githubUrl": "https://github.com/kannmelton2/butterfly-codex"
+  },
+  "project2": {
+    "title": "LibraryAtHome",
+    "mainImage": "NEED IMAGE!!",
+    "secondaryImage": "",
+    "demoVideo": "",
+    "description": "LibraryAtHome allows users to track the books they own, to whom those books are loaned, and when they should be returned to the user. LibraryAtHome was inspired by my sister's book collection and her struggle to remember to whom they were loaned.",
+    "technologiesUsed": "HTML, CSS, React.js, .NET/C#, SQL database, Version Control with Github",
+    "available": true,
+    "liveSiteUrl": "NOT LIVE",
+    "githubUrl": "https://github.com/kannmelton2/LibraryAtHome"
+  }
+}

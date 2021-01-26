@@ -1,4 +1,5 @@
 {
-  "projects": "val",
+  "devProjects": "val",
+  "designProjects": "val",
   "technologies": "val"
 }
