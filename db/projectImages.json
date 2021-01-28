@@ -1,0 +1,52 @@
+{
+  "projectImage1": {
+    "projectId": "project2",
+    "imageUrl": "https://i.imgur.com/upaEZH3.png",
+    "altText": "ccreengrab of Library At Home application home page showing a user library."
+  },
+  "projecyImage2": {
+    "projectId": "project1",
+    "imageUrl": "https://i.imgur.com/Aldcbq5.jpg",
+    "altText": "screengrab of Butterfly Codex information page, showing a map populated by user-logged sightings."
+  },
+  "projectImage3": {
+    "projectId": "designProject4",
+    "imageUrl": "https://i.imgur.com/3Ql5CPI.jpg",
+    "altText": "image of interor spread of a booklet displaying art nouveau style images and text."
+  },
+  "projectImage4": {
+    "projectId": "designProject4",
+    "imageUrl": "https://i.imgur.com/lx4eLpG.jpg",
+    "altText": "image of a small collection of booklets titled Classified: A Brief Survey of Modern Typography, showing the title page of a single booklet, with the others piled in front."
+  },
+  "projectImage5": {
+    "projectId": "designProject4",
+    "imageUrl": "https://i.imgur.com/TVcnQKa.jpg",
+    "altText": "image of the cover of the art nouveau booklet from the Classified collection"
+  },
+  "projectImage6": {
+    "projectId": "designProject2",
+    "imageUrl": "https://i.imgur.com/CLU4UZW.png",
+    "altText": "image of the front and back of a rack card advertising a bakery in Springfield, Tennessee"
+  },
+  "projectImage7": {
+    "projectId": "designProject1",
+    "imageUrl": "https://i.imgur.com/pQ5BhaT.jpg",
+    "altText": "a drone in mid-air with the dark green Smith Aerial Photography icon and wordmark on its side"
+  },
+  "projectImage8": {
+    "projectId": "designProject1",
+    "imageUrl": "https://i.imgur.com/HDJ1T5O.png",
+    "altText": "flat image of the Smith Aerial Photography logo in dark green, icon and wordmark"
+  },
+  "projectImage9": {
+    "projectId": "designProject3",
+    "imageUrl": "https://i.imgur.com/EdzO8TD.png",
+    "altText": "flat design in black of the Devil Fish Pen and Ink logo, featuring a squid with a fountain pen nib as the top of its head"
+  },
+  "projectImage10": {
+    "projectId": "designProject3",
+    "imageId": "https://i.imgur.com/ZULfozD.png",
+    "altText": "Devil Fish Pen and Ink logo shown on the front of a spiral notebook with a kraft brown cover"
+  }
+}
