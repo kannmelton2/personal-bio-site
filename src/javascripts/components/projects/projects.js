@@ -8,7 +8,7 @@ import './projects.scss';
 const createProjectCards = () => {
   smash.getDevProjectsWithImages()
     .then((projects) => {
-      let domStr;
+      let domStr = '';
       projects.forEach((project) => {
         domStr += `
         <div class="projectCard">
