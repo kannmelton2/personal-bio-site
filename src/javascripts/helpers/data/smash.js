@@ -5,20 +5,34 @@ const getDevProjectsWithImages = () => new Promise((resolve, reject) => {
   projectData.getDevProjects()
     .then((devProjectsResponse) => {
       imageData.getProjectImages().then((projectImagesResponse) => {
-        console.error('images', projectImagesResponse);
         const devProjectsWithImages = [];
         devProjectsResponse.forEach((singleDevProject) => {
           const devProject = { ...singleDevProject };
           const projectImages = projectImagesResponse.filter((image) => image.projectId === devProject.id);
-          console.error('project Images from filter:', projectImages);
           devProject.images = projectImages;
           devProjectsWithImages.push(devProject);
         });
-        console.error(devProjectsWithImages);
         resolve(devProjectsWithImages);
       });
     })
     .catch((err) => reject(err));
 });
 
-export default { getDevProjectsWithImages };
+const getDesignProjectsWithImages = () => new Promise((resolve, reject) => {
+  projectData.getDesignProjects()
+    .then((designProjectsResponse) => {
+      imageData.getProjectImages().then((projectImagesResponse) => {
+        const designProjectsWithImages = [];
+        designProjectsResponse.forEach((singleDesignProject) => {
+          const designProject = { ...singleDesignProject };
+          const projectImages = projectImagesResponse.filter((image) => image.projectId === designProject.id);
+          designProject.images = projectImages;
+          designProjectsWithImages.push(designProject);
+        });
+        resolve(designProjectsWithImages);
+      });
+    })
+    .catch((err) => reject(err));
+});
+
+export default { getDevProjectsWithImages, getDesignProjectsWithImages };

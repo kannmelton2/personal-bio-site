@@ -2,7 +2,7 @@
   "projectImage1": {
     "projectId": "project2",
     "imageUrl": "https://i.imgur.com/upaEZH3.png",
-    "altText": "ccreengrab of Library At Home application home page showing a user library."
+    "altText": "screengrab of Library At Home application home page showing a user library."
   },
   "projecyImage2": {
     "projectId": "project1",
@@ -46,7 +46,7 @@
   },
   "projectImage10": {
     "projectId": "designProject3",
-    "imageId": "https://i.imgur.com/ZULfozD.png",
+    "imageUrl": "https://i.imgur.com/ZULfozD.png",
     "altText": "Devil Fish Pen and Ink logo shown on the front of a spiral notebook with a kraft brown cover"
   }
 }

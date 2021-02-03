@@ -18,4 +18,18 @@ const getDevProjects = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getDevProjects };
+const getDesignProjects = () => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/designProjects.json`)
+    .then((response) => {
+      const allProjects = response.data;
+      const projects = [];
+      Object.keys(allProjects).forEach((projectId) => {
+        allProjects[projectId].id = projectId;
+        projects.push(allProjects[projectId]);
+      });
+      resolve(projects);
+    })
+    .catch((err) => reject(err));
+});
+
+export default { getDevProjects, getDesignProjects };
