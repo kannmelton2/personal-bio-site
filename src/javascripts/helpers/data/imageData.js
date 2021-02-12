@@ -9,10 +9,12 @@ const getProjectImages = () => new Promise((resolve, reject) => {
     .then((response) => {
       const allProjectImages = response.data;
       const projectImages = [];
-      Object.keys(allProjectImages).forEach((projectImageId) => {
-        allProjectImages[projectImageId].id = projectImageId;
-        projectImages.push(allProjectImages[projectImageId]);
-      });
+      if (allProjectImages) {
+        Object.keys(allProjectImages).forEach((projectImageId) => {
+          allProjectImages[projectImageId].id = projectImageId;
+          projectImages.push(allProjectImages[projectImageId]);
+        });
+      }
       resolve(projectImages);
     })
     .catch((err) => reject(err));
