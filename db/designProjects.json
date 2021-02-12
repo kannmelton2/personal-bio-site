@@ -1,0 +1,26 @@
+{
+  "designProject1": {
+    "title": "Smith Aerial Photography",
+    "description": "A logo designed for Smith Aerial Photography, a drone photography company based in Clarksville, TN. The design is a camera shutter with the shape of S in the center.",
+    "projectType": "Logo Design",
+    "client": "Parker Smith"
+  },
+  "designProject2": {
+    "title": "Grain + Honey Rack Card",
+    "description": "A rack card, created during my time with Allegra Print & Imaging for a client, Grain + Honey, in Springfield, TN. She provided the logo, colors, typefaces, and photos, I am responsible for the layout design.",
+    "projectType": "Rack Card, Print Marketing Material Design",
+    "client": "Hannah Sadler"
+  },
+  "designProject3": {
+    "title": "Devil Fish Pen & Ink",
+    "description": "An in-class project to explore the concept of synergy, turned into a personal passion project after the class ended.",
+    "projectType": "Logo Design",
+    "client": "Personal Project"
+  },
+  "designProject4": {
+    "title": "Classified",
+    "description": "An in-class group project on movements in the history of typography, using typefaces made or inspired by the movement. Teams of two designed each book. My team designed the Art Nouveau book in the collection.",
+    "projectType": "Book Design, Layout Design",
+    "client": "Class Project, Type II"
+  }
+}

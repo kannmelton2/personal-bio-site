@@ -1,75 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta name="description" content="Kayla Melton's Portfolio Website" />
+    <meta name="title" property="og:title" content="Kayla Melton" />
+    <meta property="og:type" content="Portfolio" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://i.imgur.com/MygnncK.png"
+    />
+    <meta name="Kayla Melton" content="Kayla Melton's Portfolio Website" />
+    <meta
+      name="description"
+      property="og:description"
+      content="Kayla Melton's Portfolio Website"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kayla Melton</title>
-</head>
-<body>
-     <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">Kayla Melton</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-ellipsis-h"></i></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#bioPage" id="navToBio">Bio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#technologiesPage">Technologies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projectsPage">Projects</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- End Navigation -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Kayla Melton</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span><i class="fas fa-ellipsis-h"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#bioPage" id="navToBio">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technologiesPage">Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectsPage">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navigation -->
 
-  <!-- Introduction -->
-  <div class="fullPage intro">
-    <img src="https://images.unsplash.com/photo-1575490937262-344efe96d264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=2100&q=80" alt="Woodcut letters that read make"/>
-    <h3>Hi there! I'm Kayla, a software developer and graphic designer based in Nashville, Tennesse. Let's create something together.</h3>
-    <div>
-    <a class="btn btn-large projects-page-btn" href="#projectsPage"><i class="fa fa-clone left"></i> View projects</a>
-    <a class="btn btn-large bio-page-btn" href="#bioPage"><i class="fas fa-user-circle"></i> Learn More</a>
-   </div>
-  </div>
-  <!-- End Introduction -->
-  
-  <!-- Primary View -->
-  <div class="fullPage biography" id="bioPage">
-    <h2>About / Bio</h2>
-        <!-- Links -->
-        <div class="bio-links">
-          <a href="https://www.linkedin.com/in/kannmelton2/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/kannmelton2"><i class="fab fa-github-square"></i></a>
-          <a href="https://twitter.com/kannmelton2"><i class="fab fa-twitter-square"></i></a>
-        </div>
-        <!--Links-->
+    <!-- Introduction -->
+    <header class="fullPage intro">
+      <img
+        src="./img/make-drew-beamer-unsplash.png"
+        alt="Woodcut letters that read make"
+      />
+      <h3>
+        Hi there! I'm Kayla, a software developer and graphic designer based in
+        Nashville, Tennesse. Let's create something together.
+      </h3>
+      <div>
+        <a class="btn btn-large projects-page-btn" href="#projectsPage"
+          ><i class="fa fa-clone left"></i> View projects</a
+        >
+        <a class="btn btn-large bio-page-btn" href="#bioPage"
+          ><i class="fas fa-user-circle"></i> Learn More</a
+        >
+      </div>
+    </header>
+    <!-- End Introduction -->
 
-        <p>Hello there, I’m Kayla! I’m a Software Developer and Graphic Designer; I currently work as a Graphic Designer and Prepress Technician for a locally owned print shop in Springfield, Tennessee.</p>
-        <p>I was first introduced to software development in a web design course while attending Austin Peay State University (APSU). I thoroughly enjoyed learning the basics of coding because I was able to create things and manipulate a web page with a few simple lines of code. The process of building, or creating something has always been something I craved. By learning development, I can create, build, break, and build again with infinite possibilities.</p>
-        <p>I pursued an internship in web design and development with Thrive Creative Group in Clarksville, Tennessee during the summer of 2016. I earned my Bachelor of Fine Art in Graphic Design a year later. I have been finding joy in designing for print with my current position while continuing to learn code. A good friend of mine introduced me to the Nashville Software School (NSS) in 2019 when he found I was interested in a career of design and development, and I put in an application immediately. I began attending NSS in January of 2020.</p>
-  </div>
-  <div class="fullPage technologies" id="technologiesPage"></div>
-  <div class="fullPage projects" id="projectsPage"></div>
-  <!-- End Primary View -->
+    <!-- Primary View -->
+    <section class="fullPage biography" id="bioPage">
+      <header>
+        <h2>About / Bio</h2>
+      </header>
+      <aside class="quote">
+        <blockquote>
+          <p class="quote-text">“The only constant in life is change.”</p>
+          <p class="quote-author">- Heraclitus</p>
+        </blockquote>
+      </aside>
+      <article>
+        <p>
+          Hello there, I’m Kayla! I’m a Software Developer and Graphic Designer;
+          I currently work as a Graphic Designer and Prepress Technician for a
+          locally owned print shop in Springfield, Tennessee.
+        </p>
+        <p>
+          I was first introduced to software development in a web design course
+          while attending Austin Peay State University (APSU). I thoroughly
+          enjoyed learning the basics of coding because I was able to create
+          things and manipulate a web page with a few simple lines of code. The
+          process of building, or creating something has always been something I
+          craved. By learning development, I can create, build, break, and build
+          again with infinite possibilities.
+        </p>
+        <p>
+          I pursued an internship in web design and development with Thrive
+          Creative Group in Clarksville, Tennessee during the summer of 2016. I
+          earned my Bachelor of Fine Art in Graphic Design a year later. I have
+          been finding joy in designing for print with my current position while
+          continuing to learn code. A good friend of mine introduced me to the
+          Nashville Software School (NSS) in 2019 when he found I was interested
+          in a career of design and development, and I put in an application
+          immediately. I began attending NSS in January of 2020. I graduated
+          from NSS in January of 2021 and I am actively looking for work.
+        </p>
+      </article>
+      <!-- Links -->
+      <section class="bio-links">
+        <a href="https://www.linkedin.com/in/kannmelton2/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/kannmelton2"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="https://twitter.com/kannmelton2"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </section>
+      <!-- Links -->
+    </section>
+    <section class="fullPage technologies" id="technologiesPage"></section>
+    <section class="fullPage projects" id="projectsPage">
+      <header>
+        <h2 class="header">Projects</h2>
+      </header>
+      <aside class="quote">
+        <blockquote>
+          <p class="quote-text">"A problem well-put is half solved."</p>
+          <p class="quote-author">- John Dewey</p>
+        </blockquote>
+      </aside>
+      <section id="devProjects"></section>
+      <section id="designProjects"></section>
+    </section>
+    <!-- End Primary View -->
 
-  <!-- Footer -->
-  <footer class="page-footer">
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-    <p>kannmelton2@gmail.com</p>
-    <a href="https://www.linkedin.com/in/kannmelton2/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/kannmelton2"><i class="fab fa-github-square"></i></a>
-    <a href="https://twitter.com/kannmelton2"><i class="fab fa-twitter-square"></i></a>
-    <h4>Kayla Melton © 2020</h4>
-  </footer>
-  <!-- End Footer -->
-
-
-</body>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
+      <p>kannmelton2@gmail.com</p>
+      <a href="https://www.linkedin.com/in/kannmelton2/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/kannmelton2"
+        ><i class="fab fa-github-square"></i
+      ></a>
+      <a href="https://twitter.com/kannmelton2"
+        ><i class="fab fa-twitter-square"></i
+      ></a>
+      <h4>Kayla Melton © 2020</h4>
+    </footer>
+    <!-- End Footer -->
+  </body>
 </html>
