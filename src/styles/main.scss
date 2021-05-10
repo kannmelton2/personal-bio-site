@@ -1,4 +1,4 @@
-@import "./colors";
+@import "./variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -88,7 +88,7 @@ body {
   }
   .projects-page-btn {
     background-color: $secondary-blue;
-    color: $darktext;
+    color: $lighttext;
     margin-top: 1em;
   }
   .bio-page-btn {
@@ -104,11 +104,10 @@ body {
   margin: 0 auto;
   display: grid;
   h2 {
-    font-size: 5em;
+    font-size: 64px;
     font-weight: 700;
     color: $primary;
     text-transform: uppercase;
-    margin-top: 2em;
   }
   ul {
     list-style: none;
@@ -119,31 +118,61 @@ body {
 
 /* ABOUT / BIO */
 .biography {
-  p {
-    justify-self: center;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    text-align: left;
-    padding: 1em;
+  margin: 9em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  article {
+    padding: 100px 140px 0 104px;
+    p {
+      justify-self: center;
+      line-height: 1.5em;
+      font-size: 1.15em;
+      text-align: left;
+    }
+    .my-name {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
   }
-  .quote {
-    font-size: 1.75em;
-    font-weight: 600;
-    color: $secondary-blue;
-    .quote-text,
-    .quote-author {
-      text-align: center;
-      padding: 0;
-      margin: 0;
+
+  .header-and-quote {
+    padding: 100px 0 0 140px;
+    background-color: $primary;
+    h2 {
+      color: white;
+      text-align: left;
+    }
+    .quote {
+      width: 80%;
+      font-family: $old-standard;
+      font-weight: 500;
+      color: white;
+      .quote-text,
+      .quote-author {
+        text-align: left;
+      }
+      .quote-text {
+        font-size: 48px;
+      }
+      .quote-author {
+        font-size: 36px;
+        padding-left: 1em;
+      }
+    }
+  }
+  /* ABOUT / BIO LINKS */
+  .bio-links {
+    padding-top: 30%;
+    text-align: left;
+    a {
+      color: $secondary-yellow;
+      font-size: 4.5em;
+      margin: 0 10px;
     }
   }
 }
-
-/* ABOUT / BIO LINKS */
-.bio-links a {
-  color: $secondary-blue;
-  font-size: 3em;
-}
+/* CLOSE BIOGRAPHY */
 
 /* PAGE FOOTER */
 
