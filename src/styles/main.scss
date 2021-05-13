@@ -99,7 +99,7 @@ body {
 
 /* FULLPAGE STYLING */
 .fullPage {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   h2 {
@@ -210,7 +210,22 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+// MEDIA QUERIES
+
+// MID-LEVEL BREAKPOINTS
+@media only screen and (max-width: 1150px) {
+  .biography {
+    .header-and-quote {
+      padding-left: 90px;
+    }
+    article {
+      padding-right: 90px;
+    }
+  }
+}
+
+// MOBILE / SMALL SCREENS
+@media only screen and (max-width: 700px) {
   .fullPage {
     width: 90%;
     h2 {
@@ -218,16 +233,46 @@ body {
     }
   }
   .biography {
-    p {
-      justify-self: center;
-      line-height: 1.5em;
-      font-size: 1.3em;
-      text-align: left;
-      padding: 1em;
-    }
-    .bio-links a {
-      color: $secondary-blue;
-      font-size: 4em;
-    }
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    .header-and-quote {
+      width: 100%;
+      padding-left: 80px;
+      h2 {
+        font-size: 48px;
+      }
+      .quote {
+        width: 80%;
+        font-family: $old-standard;
+        font-weight: 500;
+        color: white;
+        .quote-text,
+        .quote-author {
+          text-align: left;
+        }
+        .quote-text {
+          font-size: 36px;
+        }
+        .quote-author {
+          font-size: 28px;
+          padding-left: 1em;
+        }
+      }
+    } // END .header-and-quote styling
+
+    article {
+      padding: 80px 45px;
+      p {
+        justify-self: center;
+        line-height: 1.5em;
+        font-size: 1.15em;
+        text-align: left;
+      }
+      .my-name {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+    } // END article element styling
   }
 }
