@@ -1,0 +1,19 @@
+@import "./variables";
+
+@mixin secondary-blue-button {
+  background-color: $secondary-blue;
+  color: $lighttext;
+  font-weight: 500;
+  &:hover {
+    background-color: #518a98;
+  }
+}
+
+@mixin dark-text-button {
+  background-color: $darktext;
+  color: $lighttext;
+  font-weight: 500;
+  &:hover {
+    background-color: #191d1c;
+  }
+}
