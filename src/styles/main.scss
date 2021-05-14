@@ -180,10 +180,9 @@ body {
     }
   }
 }
-/* CLOSE BIOGRAPHY */
+/* CLOSE ABOUT / BIO */
 
 /* PAGE FOOTER */
-
 .page-footer {
   display: flex;
   flex-flow: row wrap;
@@ -211,9 +210,9 @@ body {
   }
 }
 
-// MEDIA QUERIES
+/* MEDIA QUERIES */
 
-// MID-LEVEL BREAKPOINTS
+/* MID-LEVEL BREAKPOINTS */
 @media only screen and (max-width: 1150px) {
   .biography {
     .header-and-quote {
@@ -225,7 +224,7 @@ body {
   }
 }
 
-// MOBILE / SMALL SCREENS
+/* MOBILE / SMALL SCREENS */
 @media only screen and (max-width: 700px) {
   .fullPage {
     width: 90%;
@@ -260,7 +259,8 @@ body {
           padding-left: 1em;
         }
       }
-    } // END .header-and-quote styling
+    }
+    /* END .header-and-quote styling */
 
     article {
       padding: 80px 45px;
@@ -274,6 +274,7 @@ body {
         font-size: 20px;
         padding-bottom: 10px;
       }
-    } // END article element styling
+    }
+    /* END article element styling*/
   }
 }
