@@ -1,4 +1,5 @@
-@import "./colors";
+@import "./events";
+@import "./variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -22,13 +23,13 @@ body {
   margin-right: 3em;
   button {
     border: none;
-    border-radius: 1em;
-    padding: 0.75rem 1.5rem;
+    border-radius: 0.5em;
+    padding: 0.5rem 1.5rem;
     margin: 0;
     text-decoration: none;
     background: white;
     color: $primary;
-    font-size: 1rem;
+    font-size: 1.25rem;
     cursor: pointer;
     text-align: center;
     transition: background 250ms ease-in-out, transform 150ms ease;
@@ -74,6 +75,7 @@ body {
 
 /* INTRO */
 .intro {
+  margin-bottom: 300px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
@@ -87,28 +89,25 @@ body {
     height: 30rem;
   }
   .projects-page-btn {
-    background-color: $secondary-blue;
-    color: $darktext;
+    @include secondary-blue-button;
     margin-top: 1em;
   }
   .bio-page-btn {
-    background-color: $darktext;
-    color: $lighttext;
+    @include dark-text-button;
     margin-top: 1em;
   }
 }
 
 /* FULLPAGE STYLING */
 .fullPage {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   h2 {
-    font-size: 5em;
+    font-size: 64px;
     font-weight: 700;
     color: $primary;
     text-transform: uppercase;
-    margin-top: 2em;
   }
   ul {
     list-style: none;
@@ -119,34 +118,71 @@ body {
 
 /* ABOUT / BIO */
 .biography {
-  p {
-    justify-self: center;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    text-align: left;
-    padding: 1em;
+  margin: 9em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  article {
+    padding: 100px 140px 0 104px;
+    p {
+      justify-self: center;
+      line-height: 1.5em;
+      font-size: 1.15em;
+      text-align: left;
+    }
+    .my-name {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    .projects-page-btn {
+      @include secondary-blue-button;
+      margin-top: 1em;
+    }
+    .btn-download-resume {
+      @include dark-text-button;
+      margin-top: 1em;
+    }
   }
-  .quote {
-    font-size: 1.75em;
-    font-weight: 600;
-    color: $secondary-blue;
-    .quote-text,
-    .quote-author {
-      text-align: center;
-      padding: 0;
-      margin: 0;
+
+  .header-and-quote {
+    padding: 100px 0 140px 140px;
+    background-color: $primary;
+    h2 {
+      color: white;
+      text-align: left;
+    }
+    .quote {
+      width: 80%;
+      font-family: $old-standard;
+      font-weight: 500;
+      color: white;
+      .quote-text,
+      .quote-author {
+        text-align: left;
+      }
+      .quote-text {
+        font-size: 48px;
+      }
+      .quote-author {
+        font-size: 36px;
+        padding-left: 1em;
+      }
+    }
+  }
+  /* ABOUT / BIO LINKS */
+  .bio-links {
+    padding-top: 30%;
+    text-align: left;
+    a {
+      color: $secondary-yellow;
+      font-size: 4.5em;
+      margin: 0 10px;
     }
   }
 }
-
-/* ABOUT / BIO LINKS */
-.bio-links a {
-  color: $secondary-blue;
-  font-size: 3em;
-}
+/* CLOSE ABOUT / BIO */
 
 /* PAGE FOOTER */
-
 .page-footer {
   display: flex;
   flex-flow: row wrap;
@@ -174,7 +210,22 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* MEDIA QUERIES */
+
+/* MID-LEVEL BREAKPOINTS */
+@media only screen and (max-width: 1150px) {
+  .biography {
+    .header-and-quote {
+      padding-left: 90px;
+    }
+    article {
+      padding-right: 90px;
+    }
+  }
+}
+
+/* MOBILE / SMALL SCREENS */
+@media only screen and (max-width: 700px) {
   .fullPage {
     width: 90%;
     h2 {
@@ -182,16 +233,48 @@ body {
     }
   }
   .biography {
-    p {
-      justify-self: center;
-      line-height: 1.5em;
-      font-size: 1.3em;
-      text-align: left;
-      padding: 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    .header-and-quote {
+      width: 100%;
+      padding-left: 80px;
+      h2 {
+        font-size: 48px;
+      }
+      .quote {
+        width: 80%;
+        font-family: $old-standard;
+        font-weight: 500;
+        color: white;
+        .quote-text,
+        .quote-author {
+          text-align: left;
+        }
+        .quote-text {
+          font-size: 36px;
+        }
+        .quote-author {
+          font-size: 28px;
+          padding-left: 1em;
+        }
+      }
     }
-    .bio-links a {
-      color: $secondary-blue;
-      font-size: 4em;
+    /* END .header-and-quote styling */
+
+    article {
+      padding: 80px 45px;
+      p {
+        justify-self: center;
+        line-height: 1.5em;
+        font-size: 1.15em;
+        text-align: left;
+      }
+      .my-name {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
     }
+    /* END article element styling*/
   }
 }
