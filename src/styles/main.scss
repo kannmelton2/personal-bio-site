@@ -24,12 +24,12 @@ body {
   button {
     border: none;
     border-radius: 0.5em;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5em 1.5em;
     margin: 0;
     text-decoration: none;
     background: white;
     color: $primary;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     cursor: pointer;
     text-align: center;
     transition: background 250ms ease-in-out, transform 150ms ease;
@@ -48,7 +48,6 @@ body {
 
 .navbar h2 {
   line-height: 1.5em;
-  padding: 0 2em;
 }
 
 .navbar ul {
@@ -63,7 +62,7 @@ body {
   display: block;
   color: $primary;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.5em;
   text-decoration: none;
   width: 100%;
   font-size: 1.25em;
@@ -75,7 +74,7 @@ body {
 
 /* INTRO */
 .intro {
-  margin-bottom: 300px;
+  margin-bottom: 5em;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
@@ -86,7 +85,7 @@ body {
   }
   img {
     align-self: center;
-    height: 30rem;
+    width: 85%;
   }
   .projects-page-btn {
     @include secondary-blue-button;
@@ -225,9 +224,21 @@ body {
 }
 
 /* MOBILE / SMALL SCREENS */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .intro {
+    img {
+      width: 100%;
+    }
+  }
   .fullPage {
-    width: 90%;
+    width: 100%;
     h2 {
       font-size: 4em;
     }
