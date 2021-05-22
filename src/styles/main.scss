@@ -13,6 +13,10 @@ body {
   width: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 /* NAVBAR STYLING*/
 .navbar {
   display: flex;
@@ -120,7 +124,7 @@ body {
   margin: 9em 0;
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   article {
     padding: 100px 140px 0 104px;
     p {

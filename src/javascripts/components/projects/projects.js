@@ -4,6 +4,18 @@ import utils from '../../helpers/utils';
 
 import './projects.scss';
 
+const displayDevProjectNames = () => {
+  smash.getDevProjectsWithImages()
+    .then((projects) => {
+      let domStr = '<h3>Development Projects</h3><div class="project-list">';
+      projects.forEach((project) => {
+        domStr += `<p>${project.title}</p>`;
+      });
+      domStr += '</div>';
+      utils.printToDom('devProjects', domStr);
+    })
+    .catch((err) => console.error('get projects broke', err));
+};
 
 const createDevProjectCards = () => {
   smash.getDevProjectsWithImages()
@@ -47,4 +59,4 @@ const createDesignProjectCards = () => {
     })
     .catch((err) => console.error('get projects broke', err));
 };
-export default { createDevProjectCards, createDesignProjectCards };
+export default { createDevProjectCards, createDesignProjectCards, displayDevProjectNames };
