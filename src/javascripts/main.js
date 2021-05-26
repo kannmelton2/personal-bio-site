@@ -7,8 +7,7 @@ import '../styles/main.scss';
 
 const init = () => {
   projects.displayDevProjectNames();
-  // projects.createDevProjectCards();
-  // projects.createDesignProjectCards();
+  projects.displayDesignProjectNames();
   technologies.printTechnologies();
 };
 
