@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   .projects-header-and-quote {
-    padding: 100px 0 140px 140px;
+    padding: 7em 1em 6em 7em;
     background-color: white;
     h2 {
       color: $primary;
@@ -31,8 +31,30 @@
       }
     }
   }
-  .projects-display {
+  .project-name-display {
+    padding: 7em 7em 6em 3em;
     background-color: $primary;
+    color: white;
+    text-align: left;
+    h3 {
+      font-weight: 600;
+      font-size: 3em;
+    }
+    ul {
+      list-style-type: none;
+      text-align: left;
+      font-weight: 500;
+      font-size: 2em;
+    }
+    button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
   }
 }
 

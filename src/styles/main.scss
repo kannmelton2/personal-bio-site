@@ -107,7 +107,7 @@ body {
   margin: 0 auto;
   display: grid;
   h2 {
-    font-size: 64px;
+    font-size: 3em;
     font-weight: 700;
     color: $primary;
     text-transform: uppercase;
@@ -126,7 +126,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   article {
-    padding: 100px 140px 0 104px;
+    padding: 7em 7em 6em 3em;
     p {
       justify-self: center;
       line-height: 1.5em;
@@ -148,7 +148,7 @@ body {
   }
 
   .header-and-quote {
-    padding: 100px 0 140px 140px;
+    padding: 7em 1em 6em 7em;
     background-color: $primary;
     h2 {
       color: white;
