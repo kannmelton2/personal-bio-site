@@ -8,6 +8,7 @@ import '../styles/main.scss';
 const init = () => {
   projects.displayDevProjectNames();
   projects.displayDesignProjectNames();
+  projects.events();
   technologies.printTechnologies();
 };
 
