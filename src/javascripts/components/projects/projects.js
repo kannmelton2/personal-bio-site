@@ -31,6 +31,7 @@ const displayDesignProject = (e) => {
   const projectId = e.target.id;
   showProjectCard();
   hideProjectTitle();
+  projectCard.displaySingleDesignProject(projectId);
   console.error('design project id', projectId);
 };
 

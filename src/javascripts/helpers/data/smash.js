@@ -48,4 +48,22 @@ const getDevProjectWithImagesByProjectId = (projectId) => new Promise((resolve, 
     }).catch((err) => reject(err));
 });
 
-export default { getDevProjectsWithImages, getDesignProjectsWithImages, getDevProjectWithImagesByProjectId };
+const getDesignProjectWithImagesByProjectId = (projectId) => new Promise((resolve, reject) => {
+  projectData.getDesignProjectById(projectId)
+    .then((devProjectResponse) => {
+      imageData.getProjectImages().then((projectImagesResponse) => {
+        const designProject = devProjectResponse.data;
+        designProject.id = projectId;
+        const projectImages = projectImagesResponse.filter((image) => image.projectId === designProject.id);
+        designProject.images = projectImages;
+        resolve(designProject);
+      });
+    }).catch((err) => reject(err));
+});
+
+export default {
+  getDevProjectsWithImages,
+  getDesignProjectsWithImages,
+  getDevProjectWithImagesByProjectId,
+  getDesignProjectWithImagesByProjectId,
+};
