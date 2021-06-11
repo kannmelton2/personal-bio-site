@@ -44,4 +44,10 @@ const createDesignProjectCards = () => {
     .catch((err) => console.error('get projects broke', err));
 };
 
-export default { createDesignProjectCards, createDevProjectCards };
+const displaySingleDevProject = (projectId) => {
+  smash.getDevProjectWithImagesByProjectId(projectId)
+    .then((project) => console.error('Project:', project))
+    .catch((err) => console.error('get projects broke', err));
+};
+
+export default { createDesignProjectCards, createDevProjectCards, displaySingleDevProject };

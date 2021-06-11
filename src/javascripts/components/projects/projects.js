@@ -1,4 +1,5 @@
 import projectData from '../../helpers/data/projectData';
+import projectCard from '../projectCard/projectCard';
 
 import utils from '../../helpers/utils';
 
@@ -21,6 +22,7 @@ const displayDevProject = (e) => {
   const projectId = e.target.id;
   showProjectCard();
   hideProjectTitle();
+  projectCard.displaySingleDevProject(projectId);
   console.error('project id', projectId);
 };
 

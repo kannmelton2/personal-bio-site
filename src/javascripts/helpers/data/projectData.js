@@ -36,4 +36,13 @@ const getDesignProjects = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getDevProjects, getDesignProjects };
+const getDevProjectById = (projectId) => axios.get(`${baseUrl}/devProjects/${projectId}.json`);
+
+const getDesignProjectById = (projectId) => axios.get(`${baseUrl}/designProjects/${projectId}.json`);
+
+export default {
+  getDevProjects,
+  getDesignProjects,
+  getDevProjectById,
+  getDesignProjectById,
+};
