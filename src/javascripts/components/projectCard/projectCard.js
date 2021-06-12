@@ -1,6 +1,8 @@
 import smash from '../../helpers/data/smash';
 import utils from '../../helpers/utils';
 
+import './projectCard.scss';
+
 const createDevProjectCards = () => {
   smash.getDevProjectsWithImages()
     .then((projects) => {
@@ -46,13 +48,37 @@ const createDesignProjectCards = () => {
 
 const displaySingleDevProject = (projectId) => {
   smash.getDevProjectWithImagesByProjectId(projectId)
-    .then((project) => console.error('Project:', project))
+    .then((project) => {
+      const domStr = `<header>
+      <img src=${project.images[0].imageUrl}>
+      <p>${project.title.toUpperCase()}<p>
+      </header>
+      <article>
+      <p>${project.description}</p>
+      <p><span class="marker">Technologies Used:</span> ${project.technologiesUsed}</p>
+      <p><span class="marker">Github Url:</span> ${project.githubUrl}</p>
+      </article>
+      `;
+      utils.printToDom('project-card', domStr);
+    })
     .catch((err) => console.error('get projects broke', err));
 };
 
 const displaySingleDesignProject = (projectId) => {
   smash.getDesignProjectWithImagesByProjectId(projectId)
-    .then((project) => console.error('Project:', project))
+    .then((project) => {
+      const domStr = `<header>
+      <img src=${project.images[0].imageUrl}>
+      <p>${project.title.toUpperCase()}<p>
+      </header>
+      <article>
+      <p>${project.description}</p>
+      <p><span class="marker">Project Type:</span> ${project.projectType}</p>
+      <p><span class="marker">Client:</span> ${project.client}</p>
+      </article>
+      `;
+      utils.printToDom('project-card', domStr);
+    })
     .catch((err) => console.error('get projects broke', err));
 };
 
