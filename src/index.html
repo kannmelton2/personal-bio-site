@@ -18,6 +18,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://i.imgur.com/MygnncK.png"
+      type="image/x-icon"
+    />
     <title>Kayla Melton</title>
   </head>
   <body>
@@ -54,7 +59,7 @@
     <!-- Introduction -->
     <header class="intro">
       <img
-        src="./img/make-drew-beamer-unsplash.png"
+        src="./img/make-drew-beamer-unsplash-original.png"
         alt="Woodcut letters that read make"
       />
       <h3>
@@ -144,17 +149,22 @@
 
     <!-- PROJECTS SECTION -->
     <section class="fullPage projects" id="projectsPage">
-      <header>
-        <h2 class="header">Projects</h2>
-      </header>
-      <aside class="quote">
-        <blockquote>
-          <p class="quote-text">"A problem well-put is half solved."</p>
-          <p class="quote-author">- John Dewey</p>
-        </blockquote>
-      </aside>
-      <section id="devProjects"></section>
-      <section id="designProjects"></section>
+      <div class="projects-header-and-quote" id="projects-header">
+        <header>
+          <h2 class="header">Projects</h2>
+        </header>
+        <aside class="quote">
+          <blockquote>
+            <p class="quote-text">“A problem well-put is half solved.”</p>
+            <p class="quote-author">- John Dewey</p>
+          </blockquote>
+        </aside>
+      </div>
+      <div class="project-name-display">
+        <section id="dev-project-list"></section>
+        <section id="design-project-list"></section>
+      </div>
+      <div class="project-card-display hidden" id="project-card"></div>
     </section>
     <!-- End Primary View -->
 

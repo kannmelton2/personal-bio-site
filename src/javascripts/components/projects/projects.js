@@ -1,50 +1,70 @@
-import smash from '../../helpers/data/smash';
+import projectData from '../../helpers/data/projectData';
+import projectCard from '../projectCard/projectCard';
 
 import utils from '../../helpers/utils';
 
 import './projects.scss';
 
+const showProjectCard = () => {
+  if (document.getElementById('project-card').classList.contains('hidden')) {
+    document.getElementById('project-card').classList.remove('hidden');
+  }
+};
 
-const createDevProjectCards = () => {
-  smash.getDevProjectsWithImages()
+const hideProjectTitle = () => {
+  if (!document.getElementById('projects-header').classList.contains('hidden')) {
+    document.getElementById('projects-header').classList.add('hidden');
+  }
+};
+
+const displayDevProject = (e) => {
+  e.preventDefault();
+  const projectId = e.target.id;
+  showProjectCard();
+  hideProjectTitle();
+  projectCard.displaySingleDevProject(projectId);
+  console.error('project id', projectId);
+};
+
+const displayDesignProject = (e) => {
+  e.preventDefault();
+  const projectId = e.target.id;
+  showProjectCard();
+  hideProjectTitle();
+  projectCard.displaySingleDesignProject(projectId);
+  console.error('design project id', projectId);
+};
+
+const displayDevProjectNames = () => {
+  projectData.getDevProjects()
     .then((projects) => {
-      let domStr = '<h3>Development Projects</h3>';
+      let domStr = '<h3>Development Projects</h3><div class="project-list"><ul>';
       projects.forEach((project) => {
-        domStr += `
-        <div class="projectCard">
-        <header><p>${project.title.toUpperCase()}</p></header>
-        <img src=${project.images[0].imageUrl}>
-        <p>${project.description}</p>
-        <p>${project.technologiesUsed}</p>
-        <footer class="project-links">
-        <a href="${project.liveSiteUrl}"><i class="fas fa-link"></i></a>
-        <a href="${project.githubUrl}"><i class="fab fa-github"></i></a>
-        </footer>
-        </div>`;
+        domStr += `<li><button class="dev-project-name" id=${project.id}>${project.title}</button></li>`;
       });
-      utils.printToDom('devProjects', domStr);
+      domStr += '</ul></div>';
+      utils.printToDom('dev-project-list', domStr);
     })
     .catch((err) => console.error('get projects broke', err));
 };
 
-const createDesignProjectCards = () => {
-  smash.getDesignProjectsWithImages()
+const displayDesignProjectNames = () => {
+  projectData.getDesignProjects()
     .then((projects) => {
-      let domStr = '<h3>Design Projects<h3>';
+      let domStr = '<h3>Design Projects</h3><div class="project-list"><ul>';
       projects.forEach((project) => {
-        domStr += `
-        <div class="projectCard">
-        <header><p>${project.title.toUpperCase()}</p></header>
-        <img src=${project.images[0].imageUrl}>
-        <p>${project.description}</p>
-        <p>${project.client}</p>
-        <footer class="project-type">
-        <p>${project.projectType}</p>
-        </footer>
-        </div>`;
+        domStr += `<li><button class="design-project-name" id=${project.id}>${project.title}</button></li>`;
       });
-      utils.printToDom('designProjects', domStr);
+      domStr += '</ul></div>';
+      utils.printToDom('design-project-list', domStr);
     })
     .catch((err) => console.error('get projects broke', err));
 };
-export default { createDevProjectCards, createDesignProjectCards };
+
+const events = () => {
+  $('body').on('click', '.dev-project-name', displayDevProject);
+  $('body').on('click', '.design-project-name', displayDesignProject);
+};
+
+
+export default { displayDevProjectNames, displayDesignProjectNames, events };
