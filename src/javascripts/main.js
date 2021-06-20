@@ -3,12 +3,14 @@ import technologies from './components/technologies/technologies';
 
 import 'bootstrap';
 import '../styles/main.scss';
+import projectCard from './components/projectCard/projectCard';
 
 
 const init = () => {
   projects.displayDevProjectNames();
   projects.displayDesignProjectNames();
-  projects.events();
+  projects.projectEvents();
+  projectCard.projectCardEvents();
   technologies.printTechnologies();
 };
 
