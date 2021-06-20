@@ -6,6 +6,7 @@ build/
 src/javascripts/helpers/apiKeys.json
 .firebaserc
 firebase.json
+.npmrc
 
 # Logs
 logs

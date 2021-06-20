@@ -23,7 +23,6 @@ const displayDevProject = (e) => {
   showProjectCard();
   hideProjectTitle();
   projectCard.displaySingleDevProject(projectId);
-  console.error('project id', projectId);
 };
 
 const displayDesignProject = (e) => {
@@ -32,7 +31,6 @@ const displayDesignProject = (e) => {
   showProjectCard();
   hideProjectTitle();
   projectCard.displaySingleDesignProject(projectId);
-  console.error('design project id', projectId);
 };
 
 const displayDevProjectNames = () => {
@@ -61,10 +59,10 @@ const displayDesignProjectNames = () => {
     .catch((err) => console.error('get projects broke', err));
 };
 
-const events = () => {
+const projectEvents = () => {
   $('body').on('click', '.dev-project-name', displayDevProject);
   $('body').on('click', '.design-project-name', displayDesignProject);
 };
 
 
-export default { displayDevProjectNames, displayDesignProjectNames, events };
+export default { displayDevProjectNames, displayDesignProjectNames, projectEvents };

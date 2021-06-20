@@ -3,6 +3,23 @@ import utils from '../../helpers/utils';
 
 import './projectCard.scss';
 
+const hideProjectCard = () => {
+  if (!document.getElementById('project-card').classList.contains('hidden')) {
+    document.getElementById('project-card').classList.add('hidden');
+  }
+};
+
+const showProjectTitle = () => {
+  if (document.getElementById('projects-header').classList.contains('hidden')) {
+    document.getElementById('projects-header').classList.remove('hidden');
+  }
+};
+
+const closeProjectView = () => {
+  hideProjectCard();
+  showProjectTitle();
+};
+
 const createDevProjectCards = () => {
   smash.getDevProjectsWithImages()
     .then((projects) => {
@@ -49,14 +66,15 @@ const createDesignProjectCards = () => {
 const displaySingleDevProject = (projectId) => {
   smash.getDevProjectWithImagesByProjectId(projectId)
     .then((project) => {
-      const domStr = `<header>
+      const domStr = `<button class="close-project-view"><i class="far fa-long-arrow-alt-left"></i></button>
+      <header>
       <img src=${project.images[0].imageUrl}>
       <p>${project.title.toUpperCase()}<p>
       </header>
       <article>
       <p>${project.description}</p>
       <p><span class="marker">Technologies Used:</span> ${project.technologiesUsed}</p>
-      <p><span class="marker">Github Url:</span> ${project.githubUrl}</p>
+      <p><a href="${project.githubUrl}">${project.githubUrl}</a></p>
       </article>
       `;
       utils.printToDom('project-card', domStr);
@@ -67,7 +85,8 @@ const displaySingleDevProject = (projectId) => {
 const displaySingleDesignProject = (projectId) => {
   smash.getDesignProjectWithImagesByProjectId(projectId)
     .then((project) => {
-      const domStr = `<header>
+      const domStr = `<button class="close-project-view"><i class="far fa-long-arrow-alt-left"></i></button>
+      <header>
       <img src=${project.images[0].imageUrl}>
       <p>${project.title.toUpperCase()}<p>
       </header>
@@ -82,9 +101,14 @@ const displaySingleDesignProject = (projectId) => {
     .catch((err) => console.error('get projects broke', err));
 };
 
+const projectCardEvents = () => {
+  $('body').on('click', '.close-project-view', closeProjectView);
+};
+
 export default {
   createDesignProjectCards,
   createDevProjectCards,
   displaySingleDevProject,
   displaySingleDesignProject,
+  projectCardEvents,
 };
