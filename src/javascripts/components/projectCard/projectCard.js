@@ -49,14 +49,15 @@ const createDesignProjectCards = () => {
 const displaySingleDevProject = (projectId) => {
   smash.getDevProjectWithImagesByProjectId(projectId)
     .then((project) => {
-      const domStr = `<header>
+      const domStr = `<button class="close-project-view"><i class="far fa-long-arrow-alt-left"></i></button>
+      <header>
       <img src=${project.images[0].imageUrl}>
       <p>${project.title.toUpperCase()}<p>
       </header>
       <article>
       <p>${project.description}</p>
       <p><span class="marker">Technologies Used:</span> ${project.technologiesUsed}</p>
-      <p><span class="marker">Github Url:</span> ${project.githubUrl}</p>
+      <p><a href="${project.githubUrl}">${project.githubUrl}</a></p>
       </article>
       `;
       utils.printToDom('project-card', domStr);

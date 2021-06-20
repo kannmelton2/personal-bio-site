@@ -39,7 +39,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@fortawesome/fontawesome-pro": "^5.15.3",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "firebase": "^7.12.0",

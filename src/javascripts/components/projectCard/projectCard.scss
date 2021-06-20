@@ -3,8 +3,19 @@
 .project-card-display {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 7em 1em 6em 7em;
+  padding: 5em 1em 6em 7em;
   width: 100%;
+  button {
+    background: none;
+    color: #5a6863;
+    border: none;
+    padding: 0 0 0.5em 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: left;
+    font-size: 1.5em;
+  }
   header {
     text-align: left;
   }
